@@ -1,0 +1,79 @@
+<br>
+<br>
+<div class="container">
+    <div class="d-flex justify-content-around">
+        <button class="genric-btn info-border radius">
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faIdCard'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Nombre del Producto</small>
+                <p class="h6"><strong>{{producto.nombre}}</strong></p>
+            </div>
+        </div>
+    </button>
+    <button class="genric-btn info-border radius">
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faUser'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Fecha de Vencimiento</small>
+                <p class="h6"><strong>{{producto.fechavencimiento | date : 'longDate'}}</strong></p>
+            </div>
+        </div>
+    </button>
+    <button class="genric-btn info-border radius">
+
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faUser'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Fecha de Elaboración</small>
+                <p class="h6"><strong>{{producto.fechaelaboracion | date : 'longDate'}}</strong></p>
+            </div>
+        </div>
+    </button>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-around">
+        <button class="genric-btn info-border radius">
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faUser'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Precio</small>
+                <p class="h6"><strong>{{producto.precio}}</strong></p>
+            </div>
+        </div>
+    </button>
+    <button class="genric-btn info-border radius">
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faUser'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Comentario</small>
+                <p class="h6"><strong>{{producto.comentario}}</strong></p>
+            </div>
+        </div>
+    </button>
+    <button class="genric-btn info-border radius">
+        <div class="media">
+            <div class="media-left">
+                <fa-icon class="mr-3 fa-2x" [icon]='faCalendar'></fa-icon>
+            </div>
+            <div class="media-body">
+                <small class="media-heading">Estado</small>
+                <p class="h6"><strong>{{producto.estado | estado}}</strong></p>
+            </div>
+        </div>
+    </button>
+    </div>
+    <hr>
+    <br>
+</div>
+
